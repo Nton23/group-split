@@ -26,17 +26,24 @@
                             class="px-2 text-sm rounded-lg focus:outline-none" placeholder="Money.. money..">
                     </div>
                 </div>
-                <button class="border border-black w-20 bg-black text-white font-bold rounded-lg">Submit</button>
+                <button id="submit-btn"
+                    class="border border-black w-20 bg-black text-white font-bold rounded-lg">Submit</button>
             </form>
-            <!-- Result container -->
-            <section id="result-container"
-                class="absolute border border-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 hidden">
-
-            </section>
-            <!-- blurry background -->
-            <div class="fixed top-0 left-0 w-full h-full backdrop-blur-sm z-40 hidden" id="blur-background"></div>
         </div>
+        <!-- Result container -->
+        <section id="result-container"
+            class="absolute border border-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-1/2 hidden">
+            <div class="border border-red-600 p-5 bg-gray-200">
+                <div class="flex justify-between border border-green-600">
+                    <span id="person-name-result">Ton</span>
+                    <p id="person-owed-amount">$50.00</p>
+                </div>
+            </div>
+        </section>
+        <!-- blurry background -->
+        <div class="fixed top-0 left-0 w-full h-full backdrop-blur-sm z-40 hidden" id="blur-background"></div>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
